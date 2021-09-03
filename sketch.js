@@ -4,7 +4,8 @@ let grid;
 let nextGrid;
 
 function setup() {
-  createCanvas(600, 600);
+  let canvas = createCanvas(600, 600);
+  canvas.parent("p5-sketch");
   background(200);
 
   numOfColumns = width / cellWidth;
